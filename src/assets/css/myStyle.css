@@ -1,0 +1,13 @@
+/* 图片上传拍照公用样式 */
+#upBox{text-align: center;width:100%;padding: 10px 0;margin: auto;position: relative;border-radius: 10px;}
+#inputBox{width: 32%;height: 110px;position: relative;border-radius: 5px;line-height: 110px;
+	background: #fff url(../image/cam.png)no-repeat center center;
+	background-size: 52%;overflow: hidden;margin-bottom: 20px;float: left;margin-right: 2%;}
+#inputBox input{width: 114%;height: 110px;opacity: 0;cursor: pointer;position: absolute;top: 0;left: -14%;}
+#imgBox{text-align: left;}
+.imgContainer{display: inline-block;width: 32%;height: 110px;margin-right: 2%;position: relative;margin-bottom: 20px;box-sizing: border-box;}
+.imgContainer:nth-child(3n-1){margin-right: 0;}
+.imgContainer img{width: 100%;height: 110px;cursor: pointer;}
+.imgContainer p{position: absolute;top: -8px;right: -5px;cursor: pointer;display: block;}
+.imgContainer p i{font-size: 20px;color: #fa6464;}
+.imgContainer:hover p{display: block;}

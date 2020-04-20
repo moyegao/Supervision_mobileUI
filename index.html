@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0" /> -->
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <title>supervision</title>
+    <link rel="stylesheet" href="static/icon/iconfont.css" />
+    <!-- <link rel="stylesheet" href="static/approval/css/fontello.css"> -->
+    <!--   <link rel="stylesheet" type="text/css" href="static/staffselector/selector.css"/>
+    <link rel="stylesheet" type="text/css" href="static/tree/mytree.css"/> -->
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <!-- <script src="/src/assets/js/qing.js"></script> -->
+    <script src="http://do.yunzhijia.com/pub/js/qingjs.js"></script>
+    <!--    <script type="text/javascript" src="static/tree/mytree.js"></script>
+     <script type="text/javascript" src="static/staffselector/selector.js"></script> -->
+    <script type="text/javascript">
+      // 获取当前用户
+      // XuntongJSBridge.call("getPersonInfo", {}, function(result) {
+      //   alert('调用云之家接口成功')
+
+      //   if (result.success) {
+      //     alert('获取数据成功')
+      //     document.cookie = 'eid='+result.data.eid;
+      //     alert('姓名：'+result.data.name)
+      //     alert('云之家账号体系下的工作圈id：'+result.data.eid)
+      //     alert('云之家账号体系下的用户id：'+result.data.openId)
+      //     alert('部落账号体系下的用户id：'+result.data.wbuserid)
+      //     alert('部落账号体系下的工作圈id：'+result.data.wbnetworkid)
+      //   } else {
+      //     alert('获取数据失败')
+      //   }
+      // });
+      //获取url中的参数
+      function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg); //匹配目标参数
+        if (r != null) return unescape(r[2]);
+        return null; //返回参数值
+      }
+      var ticket = getUrlParam("ticket");
+      document.cookie = "ticket=" + ticket;
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
